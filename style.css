@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf);
+    font-weight: 700i;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-weight: 800i;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-Italic.ttf);
+    font-weight: 400i;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+  }
+
+  :root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+    --fontSize: 32px;
+  }
+
+  *,
+  *::before,
+  *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--Offblack);
+    background: var(--Lightgrey);
+  }
+
+  .container{
+    background: var(--White);
+    width: 40%;
+    height: 60vh;
+    border-radius: 7px 7px 150px 7px;
+  }
+  .content{
+    width: 80%;
+    margin: auto;
+  }
+  label{
+    display: block;
+    padding: 30px 0 5px 0;
+    letter-spacing: 3;
+    font-size: 8px;
+    font-weight: 700;
+  }
+  .input{
+    width: 70%;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .input input{
+    padding: 10px;
+    background: transparent;
+    width: 100px;
+    border-radius: 2px;
+    border: 1px solid var(--Offwhite);
+  }
+  .input input:focus{
+    outline: 0;
+  }
+  .input input::placeholder{
+    font-weight: bold;
+  }
+  input:focus{
+    border: 1px solid var(--Purple);
+  }
+
+  .line{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .line .rule{
+    width: 90%;
+    height: 1px;
+    background: var(--Lightgrey);
+  }
+  .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--Purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+  }
+  img{
+    width: 50%;
+  }
+  .icon:hover{
+    background: var(--Offblack);
+  }
+  .result{
+    font-size: 3rem;
+    line-height: 1;
+    font-style: italic;
+  }
+  .result h2 span{
+    color: var(--Purple);
+  }
+
+  /* handling errors */
+/* .success input{
+  border: 1px solid var(--Purple);
+} */
+.error input{
+  border: 1px solid var(--Lightred);
+}
+.input .error{
+    color: var(--Lightred);
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
